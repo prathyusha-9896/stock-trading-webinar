@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Hero from "./components/Hero/Hero";
+import Header from "./components/Header";
+import StickyOfferBar from "./components/StickyOfferBar/StickyOfferBar";
+import WhyJoin from "./components/WhyJoin";
+import WhatYouWillLearn from "./components/WhatYouWillLearn";
+import FreeBonus from "./components/FreeBonus";
+import WhoShouldAttend from "./components/WhoShouldAttend";
+import Testimonials from "./components/Testimonials/Testimonials";
+import WhatsIncluded from "./components/WhatsIncluded";
+import FAQ from "./components/FAQ";
+import BullCTA from "./components/BullCTA";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Hero />
+      <StickyOfferBar/>
+      <WhyJoin/>
+      <WhatYouWillLearn/>
+      <FreeBonus/>
+      <WhoShouldAttend/>
+      <Testimonials/>
+      <WhatsIncluded/>
+      <FAQ/>
+      <BullCTA/>
+      <Footer/>
     </div>
   );
 }

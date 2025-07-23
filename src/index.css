@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,158 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000019;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-family: 'Jost', 'sans-serif';
+  background-color: #000019;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.download-button {
+  @apply relative border border-transparent p-2 rounded-md bg-[#00004D40] shadow-none text-[24px] font-normal transition;
+  overflow: hidden;
+}
+
+/* Gradient border always visible */
+.download-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 0.5px; /* This gives the visible border thickness */
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #3478B8, #00286880);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 1; /* Always visible */
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 348px) {
+  .steps-height {
+    height: 160px !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .zsiq-float {
+    bottom: 66px !important;
+  }
+}
+
+/* Custom Pagination Position */
+.vertical-instagram-slider {
+  position: relative;
+
+  .swiper-pagination {
+    position: relative !important;  /* remove default absolute */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #d9d9d9;
+    opacity: 1;
+    margin: 0 6px !important;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #542d6c;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -40%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.shine-animation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40%;
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.548) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 2.4s ease-in-out infinite;
+}
+
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-scrollLeft {
+  animation: scrollLeft 50s linear infinite;
+}
+
+.animate-scrollRight {
+  animation: scrollRight 50s linear infinite;
 }
