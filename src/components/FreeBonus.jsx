@@ -24,8 +24,8 @@ export default function FreeBonus() {
     <section className="bg-[#030617] text-white px-6 py-20">
       <div className="max-w-6xl bg-[#000029] mx-auto p-6 sm:p-10 rounded-xl relative">
         {/* Offer Heading */}
-        <div className="text-center px-4 py-6 rounded">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
+        <div className="text-center md:px-4 py-6 rounded">
+          <h2 className="text-[24px] md:text-2xl font-semibold">
             Get ₹10,000+ worth of exclusive trading resources{" "}
             <span className="text-[#00FF99] font-bold">absolutely FREE</span> when you book your seat.
           </h2>

@@ -18,12 +18,12 @@ export const useHero = () => {
     },
     imageSrc: "/Logos/profile.png", // ✅ Place this image in `public/hero-speaker.png`
     featuredLogos: [
-      { src: "/Logos/etnow.png", alt: "ET Now" },
-      { src: "/Logos/cnbc.png", alt: "CNBC" },
-      { src: "/Logos/news18.png", alt: "News18" },
-      { src: "/Logos/tv9.png", alt: "TV9" },
-      { src: "/Logos/asianet.png", alt: "ABP News" },
-      { src: "/Logos/bloomberg.png", alt: "Bloomberg" },
+      { src: "/logos/etnow.png", alt: "ET Now" },
+      { src: "/logos/cnbc.png", alt: "CNBC" },
+      { src: "/logos/news18.png", alt: "News18" },
+      { src: "/logos/tv9.png", alt: "TV9" },
+      { src: "/logos/asianet.png", alt: "ABP News" },
+      { src: "/logos/bloomberg.png", alt: "Bloomberg" },
     ],
   };
   

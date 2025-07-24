@@ -21,12 +21,13 @@ export default function BullCTA() {
           <h3 className="text-2xl sm:text-3xl font-bold mt-2">
             Spend 3 hours that can give you <span className="text-[#00FF99]">clarity for years.</span>
           </h3>
-          <p className="text-sm text-gray-300 mt-4">
+          <p className="text-sm text-gray-300 my-4">
             Reserve your seat now. No fake promises. Just real education.
           </p>
-          <button className="mt-6 px-6 py-3 bg-[#00FF99] text-black font-medium rounded-full hover:bg-[#00e68a] transition">
+          <button className="text-sm sm:text-base px-5 py-2 sm:px-6 sm:py-3 bg-[#00FF66] text-black font-semibold rounded-full shadow-lg shine-animation relative overflow-hidden">
             Yes, I Want To Learn Trading
           </button>
+
         </div>
       </div>
     </section>

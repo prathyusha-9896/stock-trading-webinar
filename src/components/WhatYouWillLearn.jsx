@@ -35,7 +35,7 @@ export default function WhatYouWillLearn() {
   return (
     <section className="bg-[#030617] text-white px-6 py-20">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-[56px] leading-[70px] text-[#E6EAF0] font-semibold font-bold">
+        <h2 className="md:text-[56px] text-[24px] leading-[40px] md:leading-[70px] text-[#E6EAF0] font-semibold font-bold">
           What <span className="text-[#00FF99]">You’ll Learn</span> in <br />
           Just 3 Hours
         </h2>

@@ -35,7 +35,7 @@ body {
 }
 
 .download-button {
-  @apply relative border border-transparent p-2 rounded-md bg-[#00004D40] shadow-none text-[24px] font-normal transition;
+  @apply relative border border-transparent p-2 rounded-md bg-[#00004D40] shadow-none  font-normal transition;
   overflow: hidden;
 }
 

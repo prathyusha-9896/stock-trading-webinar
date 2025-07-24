@@ -29,9 +29,10 @@ export default function WhatsIncluded() {
           ))}
         </div>
 
-        <button className="bg-[#00FF99] text-[#030617] font-semibold text-sm px-6 py-3 rounded-full hover:brightness-110 transition">
+        <button className="relative overflow-hidden bg-[#00FF66] text-[#030617] font-semibold text-sm px-6 py-3 rounded-full hover:brightness-110 transition shine-animation">
           Reserve My Spot for ₹99 (₹199)
         </button>
+
       </div>
     </section>
   );

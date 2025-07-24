@@ -52,7 +52,7 @@ export default function WhoShouldAttend() {
       <div className="max-w-7xl relative mx-auto grid md:grid-cols-2 py-20 gap-12 items-center">
                 
         {/* Right Image */}
-        <div className=" rounded-xl overflow-hidden shadow-lg">
+        <div className="md:block hidden rounded-xl overflow-hidden shadow-lg">
         {/* Profile Image */}
         <img
             src="/murthy.png"
@@ -61,7 +61,7 @@ export default function WhoShouldAttend() {
         />
         </div>
                 {/* Floating Quote Box */}
-        <div className="absolute bottom-[20%] left-[-60px] bg-[#1e3a8a]/80 text-white text-sm p-4 rounded-md max-w-xs backdrop-blur-sm shadow-lg border border-blue-400">
+        <div className="absolute md:block hidden bottom-[20%] left-[-60px] bg-[#1e3a8a]/80 text-white text-sm p-4 rounded-md max-w-xs backdrop-blur-sm shadow-lg border border-blue-400">
             <em>
             “I'm not here to sell hope. I'm here to teach what works in the real market.”
             </em>
@@ -85,6 +85,21 @@ export default function WhoShouldAttend() {
           <p className="text-sm text-gray-400 font-medium">
             <span className="text-white">No experience required.</span> Just an open mind.
           </p>
+        </div>
+
+        <div className="md:hidden block rounded-xl overflow-hidden shadow-lg">
+        {/* Profile Image */}
+        <img
+            src="/murthy.png"
+            alt="CA Rudramurthy"
+            className="w-full h-auto object-cover"
+        />
+        </div>
+                {/* Floating Quote Box */}
+        <div className="absolute md:hidden block bottom-[5%] left-[-16px] bg-[#1e3a8a]/80 text-white text-sm p-4 rounded-md md:max-w-xs max-w-80 backdrop-blur-sm shadow-lg border border-blue-400">
+            <em>
+            “I'm not here to sell hope. I'm here to teach what works in the real market.”
+            </em>
         </div>
       </div>
     </section>

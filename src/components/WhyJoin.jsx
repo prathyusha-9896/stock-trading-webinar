@@ -1,4 +1,3 @@
-// src/components/WhyJoin/WhyJoin.jsx
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
 const reasons = [
@@ -18,33 +17,35 @@ const reasons = [
 
 export default function WhyJoin() {
   return (
-    <section className="bg-[#030617] text-white px-6 py-20">
+    <section className="bg-[#030617] text-white px-4 sm:px-6 md:px-8 py-14 sm:py-20">
       <div className="max-w-7xl mx-auto">
-        {/* Title + Right Explanation */}
+        {/* Title + Explanation Row */}
         <div className="flex flex-col lg:flex-row justify-between gap-6 mb-10">
           {/* Left Title */}
           <div className="lg:max-w-[60%]">
-            <h2 className="text-[48px] font-bold leading-tight">
+            <h2 className="text-2xl sm:text-4xl md:text-[48px] font-bold leading-tight">
               Join the Stock Trading for <br />
               <span className="text-[#00FF99]">Financial Freedom Webinar If...</span>
             </h2>
           </div>
 
           {/* Right Subtext */}
-          <div className="text-[26px]  text-[#E6EAF0] mt-2">
-            If you resonate with any of the <br />following, this session is exactly <br /> what you need:
+          <div className="text-lg sm:text-xl md:text-[26px] text-[#E6EAF0] mt-2 leading-snug">
+            If you resonate with any of the <br />
+            following, this session is exactly <br />
+            what you need:
           </div>
         </div>
 
-        {/* Grid of Points */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Reason Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {reasons.map((text, idx) => (
             <div
               key={idx}
-              className="bg-[#0f172a] border border-[#1e293b] rounded-xl p-[36px] flex flex-col items-start gap-3"
+              className="bg-[#0f172a] border border-[#1e293b] rounded-xl p-6 sm:p-8 flex flex-col items-start gap-3"
             >
-              <AiOutlineInfoCircle size={34} className="text-[#00FF99] mt-1 shrink-0" />
-              <p className="text-[#E6EAF0] font-normal leading-[28px] text-[18px]">{text}</p>
+              <AiOutlineInfoCircle size={30} className="text-[#00FF99] shrink-0" />
+              <p className="text-[#E6EAF0] text-base sm:text-[18px] leading-relaxed">{text}</p>
             </div>
           ))}
         </div>
