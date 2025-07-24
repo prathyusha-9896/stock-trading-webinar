@@ -163,3 +163,11 @@ body {
 .animate-scrollRight {
   animation: scrollRight 50s linear infinite;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

@@ -91,21 +91,21 @@ export default function Hero() {
           {/* CTA + Timer */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 text-white">
             {/* CTA Button */}
-            <button className="relative overflow-hidden text-sm sm:text-base px-5 py-2 sm:px-6 sm:py-3 bg-[#00FF66] text-black font-semibold rounded-full shadow-lg shine-animation">
+            <button className="relative overflow-hidden text-sm sm:text-base px-3 py-2 md:px-4 md:py-3 bg-[#00FF66] text-black font-semibold rounded-full shadow-lg shine-animation">
               Reserve My Spot for ₹99
               <span className="line-through text-[#00004D] text-sm font-light ml-2">₹1099</span>
             </button>
 
             {/* Timer */}
             <div className="flex items-center gap-4 text-sm sm:text-base">
-              <span className="text-white/70 whitespace-nowrap">Offer <br />Ends In:</span>
+              <span className="text-white whitespace-nowrap">Offer <br />Ends In:</span>
               <div className="flex text-center divide-x divide-white/40">
                 {timer.split("|").map((block, i) => {
                   const [value, label] = block.trim().split(" ");
                   return (
                     <div key={i} className="px-2">
                       <div className="text-lg sm:text-xl font-bold">{value}</div>
-                      <div className="text-[10px] sm:text-xs text-gray-400 tracking-widest uppercase">
+                      <div className="text-[10px] sm:text-xs text-whitetracking-widest uppercase">
                         {label}
                       </div>
                     </div>

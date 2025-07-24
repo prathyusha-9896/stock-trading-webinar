@@ -6,7 +6,7 @@ const Header = () => {
     <header  id="header"  className="w-full md:px-6 py-4 bg-transparent">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <img className="w-24" src="/logo.png" alt="" />
+        <img className="w-24 md:w-56" src="/logo.png" alt="" />
 
         {/* CTA Button Group */}
         <div className="flex items-center bg-[#06094e] rounded-full overflow-hidden text-[8px] md:text-sm shadow-md">

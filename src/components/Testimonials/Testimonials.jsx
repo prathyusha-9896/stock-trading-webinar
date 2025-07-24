@@ -39,10 +39,9 @@ const testimonials = [
   },
 ];
 
-
 export default function Testimonials() {
   const scrollRef = useRef(null);
-  const cardWidth = 300; // Updated for better spacing
+  const cardWidth = 290;
   const [index, setIndex] = useState(0);
 
   const scrollToIndex = (newIndex) => {
@@ -71,15 +70,14 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="bg-[#030617] text-white px-4 sm:px-6 py-16 sm:py-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
+    <section className="bg-[#030617] ml-28 text-white px-4 sm:px-6 py-16 sm:py-20 overflow-hidden">
+        {/* Heading */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold">
               Hear it from our <span className="text-[#00FF99]">students</span>
             </h2>
-            <p className="text-sm text-gray-400 max-w-md">
+            <p className="text-sm text-gray-400 max-w-lg mt-1">
               Hear what past attendees say about learning directly from CA{" "}
               <span className="font-medium">Rudramurthy</span>.
             </p>
@@ -94,15 +92,15 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Scrollable Cards */}
+        {/* Testimonials Scroll Row */}
         <div
           ref={scrollRef}
-          className="flex gap-4 overflow-x-auto scroll-smooth pb-2"
+          className="flex gap-6 overflow-x-auto scroll-smooth w-full hide-scrollbar pb-2"
         >
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="min-w-[280px] sm:min-w-[300px] max-w-[300px] bg-[#0f172a] border border-[#1e293b] rounded-xl p-6 flex-shrink-0"
+              className="min-w-[260px] sm:min-w-[280px] max-w-[280px] bg-[#0f172a] border border-[#1e293b] rounded-xl p-6 flex-shrink-0"
             >
               <p className="text-sm text-gray-300 mb-4">“{t.feedback}”</p>
               <div className="flex items-center gap-4">
@@ -127,12 +125,12 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Images Below (Responsive) */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-12">
+        {/* Image Row */}
+        <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-20">
           <img src="/image1.jpg" alt="testimonial context" className="w-full sm:w-1/2 lg:w-1/3 rounded-lg object-cover" />
           <img src="/image2.jpg" alt="testimonial context" className="w-full sm:w-1/2 lg:w-1/3 rounded-lg object-cover" />
         </div>
-      </div>
     </section>
   );
 }
+
