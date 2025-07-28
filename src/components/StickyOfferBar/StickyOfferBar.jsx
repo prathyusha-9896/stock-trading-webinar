@@ -88,7 +88,7 @@ const StickyOfferBar = () => {
             30 Seats Left
           </span>
           <button className="relative overflow-hidden bg-[#00FF66] hover:brightness-105 text-black font-semibold px-6 py-3 rounded-full shadow shine-animation">
-            Reserve My Spot for ₹499
+            Reserve My Spot for ₹99
             <span className="ml-2 line-through text-xs text-[#00004D]">₹1,999</span>
           </button>
         </div>

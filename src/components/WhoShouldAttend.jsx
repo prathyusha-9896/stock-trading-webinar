@@ -70,7 +70,7 @@ export default function WhoShouldAttend() {
         {/* Left Text */}
         <div>
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            meet <span className="text-[#00FF99]">CA Rudramurthy BV</span>
+            Meet <span className="text-[#00FF99]">CA Rudramurthy BV</span>
           </h2>
 
           <ul className="space-y-4 mb-6">
